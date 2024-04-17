@@ -20,15 +20,15 @@
             }
            }*/
 
-           const addressInput = document.getElementById("address");
+           const addressInput = document.querySelector('#address');
            const suggestionsOutput = document.getElementById("result");
            
-           addressInput.addEventListener("keyup", (e) => {
+           addressInput.addEventListener("keyup" , (e) => {
                prepareRequest(e.target.value);
            });
            
            const prepareRequest = async (lookupValue) => {
-           const SmartySDK = require ("smartystreets-javascript-sdk");
+           const SmartySDK = require("smartystreets-javascript-sdk");
            const SmartyCore = SmartySDK.core;
            const Lookup = SmartySDK.usAutocompletePro.Lookup;
            
