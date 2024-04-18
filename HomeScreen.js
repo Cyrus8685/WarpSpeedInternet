@@ -28,7 +28,7 @@
            });
            
            const prepareRequest = async (lookupValue) => {
-           const SmartySDK = require("smartystreets-javascript-sdk");
+           const SmartySDK = require("node_modules/smartystreets-javascript-sdk");
            const SmartyCore = SmartySDK.core;
            const Lookup = SmartySDK.usAutocompletePro.Lookup;
            
