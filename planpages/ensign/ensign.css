@@ -35,6 +35,7 @@ body{
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
+    font-size: 20px;
 }
 
 .card2{
@@ -44,6 +45,7 @@ body{
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
+    font-size: 20px;
 }
 
 .card3{
@@ -53,12 +55,16 @@ body{
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
+    font-size: 20px;
 }
 
 .paynow{
     text-align: center;
 }
 
+.paynow{
+    height: 100px;
+}
 
 
 
