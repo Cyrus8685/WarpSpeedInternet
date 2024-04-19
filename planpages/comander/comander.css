@@ -23,7 +23,6 @@ body{
 .cards{
     width: 80%;
     display: flex;
-    flex-grow: ;
     margin: auto;
     padding: auto;
     text-align: center;
@@ -53,6 +52,8 @@ body{
     border-radius: 10px;
 }
 
-
+.paynow{
+    text-align: center;
+}
 
 
