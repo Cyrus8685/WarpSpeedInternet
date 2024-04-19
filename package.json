@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "requirejs": "^2.3.6",
-    "smartystreets-javascript-sdk": "^5.1.1"
-  }
-}
