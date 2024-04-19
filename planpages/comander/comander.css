@@ -23,6 +23,7 @@ body{
 .cards{
     width: 80%;
     display: flex;
+    flex-direction: row;
     margin: auto;
     padding: auto;
     text-align: center;
@@ -34,7 +35,7 @@ body{
     background-color: white;
     border: 3px solid black;
     border-radius: 10px;
-    ;
+    margin: 30px;
 }
 
 .card2{
@@ -43,6 +44,7 @@ body{
     background-color: white;
     border: 3px solid black;
     border-radius: 10px;
+    margin: 30px;
 }
 
 .card3{
@@ -51,6 +53,7 @@ body{
     background-color: white;
     border: 3px solid black;
     border-radius: 10px;
+    margin: 30px;
 }
 
 .paynow{
