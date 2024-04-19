@@ -61,6 +61,12 @@ body{
 
 .paynow{
     text-align: center;
+    padding: auto;
+    margin: 20px;
+}
+
+.goback{
+    text-align: center;
 }
 
 

@@ -60,12 +60,18 @@ body{
 
 .paynow{
     text-align: center;
+    margin: 20px;
 }
 
-.paynow{
+.goback{
     height: 100px;
 }
 
-
+.card3 p{
+    width: 70%;
+    text-align: center;
+    margin: 30px;
+    font-size: 25px;
+}
 
 
