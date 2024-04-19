@@ -11,7 +11,7 @@ body{
     border: 3px solid black;
     border-radius: 30px;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.753);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -32,7 +32,7 @@ body{
 .card1{
     width: 900px;
     height: 500px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
@@ -41,7 +41,7 @@ body{
 .card2{
     width: 900px;
     height: 500px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.8);
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
@@ -50,7 +50,7 @@ body{
 .card3{
     width: 900px;
     height: 500px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
