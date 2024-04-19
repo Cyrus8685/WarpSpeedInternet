@@ -1,0 +1,41 @@
+body{
+    background-image: url(/planpages/zzimages/New\ Galaxy\ Background.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+.substance{
+    width: 1300px;
+    height: 400px;
+    padding: 15px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.substance img{
+    width: 200px;
+}
+
+.cards{
+    width: 80%;
+    display: flex;
+    flex-grow: ;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.card1{
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+
