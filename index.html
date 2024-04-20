@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warp Speed Internet</title>
-    <script src="https://us-autocomplete-pro.api.smarty.com/lookup?
-    key=196979706776528503&search=123+max_results=5' -H 'referer: https://myneatwebsite.com'"></script>
     <style>
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
@@ -61,35 +59,13 @@
         <div class="container">
             <form id="addressForm">
                 <label for="address">Enter your Home address:</label><br>
-                <input type="text" id="address" name="address" required placeholder="Enter Address" /><br>
-                <input type="submit" value="Check Availability"/>
+                <input type="text" id="autocomplete" name="address" required autocomplete="on" placeholder="Enter Address" id="suggestions" /><br>
+                <input type="button" value="Check Availability" id="addresscheck"/>
             </form>
             <div class="result" id="result"></div>
         </div>
-    
-        <script>
-            /*document.getElementById('addressForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                var address = document.getElementById('address').value;
-                //  Logic needed to show availability with an API
-                //  Just shows basic event list atm,
-                document.getElementById('result').innerHTML = "<p>Checking availability for: " + address + "</p>";
-            });*/
-        let  address;
-        function initAddress() {
-            address = new us-autocomplete-pro.api.smarty.com.Address (document.getElementById('address'));
-            address.addListener('address_results', onAddressResult);
-        }
-
-           function onAddressResults () {
-            var results = address.getResults();
-            if (!results.geometry) {
-                document.getElementById('address').placeholer = 'Type Address Here';
-            } else {
-                document.getElementById('details').innerHTML = address.name;
-            }
-           }
-        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN3TP93F6l75a2qIh9ba7uUGbaLJ1zG3M&loading=async&libraries=places&callback=initAutocomplete" async defer></script>
+        <script src="HomeScreen.js"></script>
     </body>
     </html>
     

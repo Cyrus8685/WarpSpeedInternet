@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: White;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #cartItems {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cartItem {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .cartItem:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .cartItem img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .cartItem .itemName {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+        <h1>Your Shopping Cart</h1> <!--change the wording?-->
+        <ul id="cartItems">
+            <!-- Cart items will be added here -->
+        </ul>
+ </div>
+
+ <script>
+    // Fetch the cart items from the API
+    fetch('https://example.com/shopping-cart-api')
+        .then(response => response.json())
+        .then(data => {
+            const cartItems = data.items;
+            const cartItemsList = document.getElementById('cartItems');
+
+            // clear cart
+            cartItemsList.innerHTML = '';
+
+            // Add each item to the list
+            cartItems.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.classList.add('cartItem');
+                listItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <span class="itemName">${item.name}</span> - $${item.price}
+                `;
+                cartItemsList.appendChild(listItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching cart items:', error);
+        });
+</script>
