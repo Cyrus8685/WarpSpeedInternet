@@ -58,10 +58,24 @@ body{
     font-size: 20px;
 }
 
+.card1 p{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+.card2 p{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
 .card3 p{
     width: 70%;
     text-align: center;
-    margin: 30px;
+    margin: auto;
     font-size: 25px;
 }
 
@@ -78,7 +92,7 @@ body{
    font-size: 20px;
    width: 200px;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+   
 }
 
 
