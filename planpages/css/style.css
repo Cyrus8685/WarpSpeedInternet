@@ -11,7 +11,7 @@ body{
     border: 3px solid black;
     border-radius: 30px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.82);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -31,7 +31,7 @@ body{
 .card1{
     width: 900px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.82);
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
@@ -41,7 +41,7 @@ body{
 .card2{
     width: 900px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.82);
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
@@ -51,7 +51,7 @@ body{
 .card3{
     width: 900px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.82);
     border: 3px solid black;
     border-radius: 10px;
     margin: 30px;
@@ -84,6 +84,7 @@ body{
     justify-content: space-between;
     max-width: 20%;
     margin: auto;
+    padding: 90px;
 }
 
 .buttons button{
