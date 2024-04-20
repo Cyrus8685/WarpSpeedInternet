@@ -58,20 +58,31 @@ body{
     font-size: 20px;
 }
 
-.paynow{
-    text-align: center;
-    margin: 20px;
-}
-
-.goback{
-    height: 100px;
-}
-
 .card3 p{
     width: 70%;
     text-align: center;
     margin: 30px;
     font-size: 25px;
 }
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 20%;
+    margin: auto;
+}
+
+.buttons button{
+   border: none;
+   padding: 10px;
+   font-size: 20px;
+   width: 200px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+
 
 
