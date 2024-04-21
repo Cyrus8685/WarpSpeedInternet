@@ -19,11 +19,11 @@ In order to use this site users must input their address and verify that it is w
 
 ## Credits
 
-Cyrus8685
-Nate-Scuderi
-Ashe-EG
+Cyrus8685 - Jonathan Negron
+Nate-Scuderi - Nathan Scuderi
+Ashe-EG - Alek Goss
 ConnorLuks - Connor O'Halloran
-Arosswhich
+Arosswhich - Abigail Ross-Whichello
 
 
 —
