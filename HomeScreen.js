@@ -21,6 +21,7 @@
            }*/
 
 let autocomplete;
+let place;
 async function initAutocomplete() {
     autocomplete = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete'),
@@ -32,8 +33,7 @@ async function initAutocomplete() {
 }
 
 async function onPlaceChanged(){
-    var place = autocomplete.getPlace();
-
+    place = autocomplete.getPlace ();
     if (!place.geometry) {
         document.getElementById('address').placeholder = 'Enter a place';
     } else {
@@ -41,13 +41,11 @@ async function onPlaceChanged(){
     }
 }
 
-addresscheck.addEventListener("click", async function  checkAvailability() {
-    for (let i= 0; i<result.length; i++) {
-        if (result[i].short_name === 'FL' ) {
-            alert("Within Florid");
-        }
-        else {
-            alert("Not Within Florida")
-        }
+addresscheck.addEventListener("click", async function onPlaceChanged(){
+    place = autocomplete.getPlace ();
+    if (place.address_components = `short_name = "FL"`) {
+        alert("Within Florida");
+    } else {
+        alert("Not Within Florida")
     }
 });
