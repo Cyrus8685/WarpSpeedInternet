@@ -42,8 +42,8 @@ async function onPlaceChanged(){
 }
 
 addresscheck.addEventListener("click", async function onPlaceChanged(){
- place = autocomplete.getPlace ();
-  if (place ===`FL`) {
+ for place = autocomplete.getPlace()
+  if (place.address_components ===`short_name = "FL"`) {
         alert("Within Florida");
     } else {
         alert("Not Within Florida")
