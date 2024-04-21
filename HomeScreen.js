@@ -21,6 +21,7 @@
            }*/
 
 let autocomplete;
+let place;
 async function initAutocomplete() {
     autocomplete = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete'),
@@ -32,22 +33,36 @@ async function initAutocomplete() {
 }
 
 async function onPlaceChanged(){
-    var place = autocomplete.getPlace();
-
+    place = autocomplete.getPlace ();
     if (!place.geometry) {
         document.getElementById('address').placeholder = 'Enter a place';
     } else {
         document.getElementById('details').innerHTML = place.name;
     }
+    console.log(place.address_components);
 }
 
-addresscheck.addEventListener("click", async function  checkAvailability() {
-    for (let i= 0; i<result.length; i++) {
-        if (result[i].short_name === 'FL' ) {
-            alert("Within Florid");
+addresscheck.addEventListener("click", async function onPlaceChanged() {
+    let isInFlorida = false;
+    place.address_components.forEach(component => {
+        if (component.long_name === "Florida") {
+            isInFlorida = true;
         }
-        else {
-            alert("Not Within Florida")
-        }
+    });
+
+    if (isInFlorida) {
+       window.location.replace("planspage.html") 
+    } else {
+        alert("Not Within Florida");
     }
+
+    var input1 = document.getElementById('autocomplete');
+    console.log(input1.value);
+
+    var input2 = document.getElementById('name');
+    console.log(input2.value);
+
+    var input1 = document.getElementById('email');
+    console.log(input1.value);
+    
 });
