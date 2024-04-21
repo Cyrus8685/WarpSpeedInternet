@@ -39,13 +39,30 @@ async function onPlaceChanged(){
     } else {
         document.getElementById('details').innerHTML = place.name;
     }
+    console.log(place.address_components);
 }
 
-addresscheck.addEventListener("click", async function onPlaceChanged(){
- for place = autocomplete.getPlace()
-  if (place.address_components ===`short_name = "FL"`) {
-        alert("Within Florida");
+addresscheck.addEventListener("click", async function onPlaceChanged() {
+    let isInFlorida = false;
+    place.address_components.forEach(component => {
+        if (component.long_name === "Florida") {
+            isInFlorida = true;
+        }
+    });
+
+    if (isInFlorida) {
+       window.location.replace("planspage.html") 
     } else {
-        alert("Not Within Florida")
+        alert("Not Within Florida");
     }
+
+    var input1 = document.getElementById('autocomplete');
+    console.log(input1.value);
+
+    var input2 = document.getElementById('name');
+    console.log(input2.value);
+
+    var input1 = document.getElementById('email');
+    console.log(input1.value);
+    
 });

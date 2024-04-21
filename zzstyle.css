@@ -1,0 +1,97 @@
+body{
+    background-image: url(/planpages/zzimages/New\ Galaxy\ Background.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+.substance{
+    width: 1300px;
+    height: 400px;
+    padding: 15px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.82);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.substance img{
+    width: 200px;
+}
+
+.cards{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.card1{
+    width: 900px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.82);
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.card2{
+    width: 900px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.82);
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.card3{
+    width: 900px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.82);
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.card1 p{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+.card2 p{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+.card3 p{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 20%;
+    margin: auto;
+    padding: 90px;
+}
+
+.buttons button{
+   border: none;
+   padding: 10px;
+   font-size: 20px;
+   width: 200px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
