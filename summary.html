@@ -1,0 +1,108 @@
+<<<<<<< .merge_file_EBWBaN
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for your Warp Speed Internet subscription</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: lightgrey;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #1149e4;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .email {
+            font-weight: bold;
+            color: #1149e4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  <!-- remove your email address? just leave blank?-->
+        <h1>Thank You for your Warp Speed Internet subscription!</h1>
+        <p>We're excited to have you on board. You will receive notifications and offers via email.</p>
+        <p>Your email address: <span class="email" id="email"></span></p> <!--span JS-->
+    </div>
+
+    <script> // JS not sure how accurate -->
+        // Get the email used for initial email search for qualifying locations
+        var email = localStorage.getItem('subscriptionEmail');
+
+        // Display the email on the summary page
+        if (email) {
+            document.getElementById('email').textContent = email;
+        }
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for your Warp Speed Internet subscription</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: lightgrey;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #1149e4;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .email {
+            font-weight: bold;
+            color: #1149e4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  <!-- remove your email address? just leave blank?-->
+        <h1>Thank You for your Warp Speed Internet subscription!</h1>
+        <p>We're excited to have you on board. You will receive notifications and offers via email.</p>
+        <p>Your email address: <span class="email" id="email"></span></p> <!--span JS-->
+    </div>
+
+    <script> // JS not sure how accurate -->
+        // Get the email used for initial email search for qualifying locations
+        var email = localStorage.getItem('subscriptionEmail');
+
+        // Display the email on the summary page
+        if (email) {
+            document.getElementById('email').textContent = email;
+        }
+    </script>
+</body>
+>>>>>>> .merge_file_1jVEPV
+</html>
