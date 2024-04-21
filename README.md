@@ -27,7 +27,3 @@ In order to use this site users must input their address and verify that it is w
 
 
 —
-<<<<<<< .merge_file_JqVpG8
-
-=======
->>>>>>> .merge_file_xZq9ST
