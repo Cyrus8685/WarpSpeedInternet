@@ -1,6 +1,13 @@
+const userNameText = document.querySelector("#fullname"); 
 
+function displayName() {
+    const nameFromLocalStorage = localStorage.getItem('name');
 
-const outemail1 = document.getElementById(`emailout1`)
+    if (nameFromLocalStorage) {
+        userNameText.textContent = nameFromLocalStorage;
+    } else {
+        userNameText.textContent = "No name data in local storage";
+    }
+}
 
-function changeEmail() {
-    input3.innerHTML = outemail1.value; }
+displayName();

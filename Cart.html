@@ -9,7 +9,8 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: White;
+            background-image: url(/planpages/zzimages/New\ Galaxy\ Background.jpg);
+            background-size: cover;
         }
         .container {
             max-width: 800px;
@@ -73,7 +74,7 @@
     <div class="container">  <!-- remove your email address? just leave blank?-->
         <h1>Thank You for your Warp Speed Internet subscription!</h1>
         <p>We're excited to have you on board. You will receive notifications and offers via email.</p>
-        <p>Your email address: <span class="email" id="emailout1" onload="changeEmail()"></span></p> <!--span JS-->
+        <p>Your email address: <span class="email" id="emailout1" onload="displayName ()"></span></p> <!--span JS-->
         <p>Thank You: <span class="fullname" id="fullname"> </span> </p> <!--need to add var firstname? localStorage not sure-->
         <p> One of our sales agents will be in contact with you shortly for further instructions and billing.</p>
     </div>

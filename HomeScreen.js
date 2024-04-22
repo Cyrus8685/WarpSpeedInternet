@@ -22,6 +22,7 @@
 
 let autocomplete;
 let place;
+
 async function initAutocomplete() {
     autocomplete = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete'),
@@ -59,10 +60,10 @@ addresscheck.addEventListener("click", async function onPlaceChanged() {
     var input1 = document.getElementById('autocomplete');
     console.log(input1.value);
 
-    var input2 = document.getElementById('name');
-    console.log(input2.value);
+    var input2 = document.getElementById('name').value;
+    localStorage.setItem('name', input2);
 
     var input3 = document.getElementById('email');
-    console.log(input3.value);
+    setItem('email', input3.value);
     
 });
