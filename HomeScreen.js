@@ -51,19 +51,19 @@ addresscheck.addEventListener("click", async function onPlaceChanged() {
         }
     });
 
-    if (isInFlorida) {
-       window.location.replace("planspage.html") 
-    } else {
-        alert("Not Within Florida");
-    }
+    var input1 = document.getElementById('autocomplete').value;
+    localStorage.setItem('address', input1);
 
-    var input1 = document.getElementById('autocomplete');
-    console.log(input1.value);
-
-    var input2 = document.getElementById('name').value;
+    var input2 = document.getElementById('fullname').value;
     localStorage.setItem('name', input2);
 
-    var input3 = document.getElementById('email');
-    setItem('email', input3.value);
+    var input3 = document.getElementById('subscriptionEmail').value;
+    localStorage.setItem('email', input3);
+
+    if (isInFlorida) {
+        window.location.replace("planspage.html") 
+     } else {
+         alert("Not Within Florida");
+     }
     
 });

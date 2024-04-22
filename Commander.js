@@ -3,6 +3,6 @@ function changePage() {
 
     function changePage2() {
         var Commander = "Commander";
-        console.log(Commander);
-        window.location.replace("summary.html");
+        localStorage.setItem('Commander', Commander.value);
+        window.location.replace("cart.html");
     };

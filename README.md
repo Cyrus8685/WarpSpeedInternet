@@ -14,9 +14,8 @@ N/A
 
 Provide instructions and examples for use. Include screenshots as needed.
 
-In order to use this site users must input their address and verify that it is within the range covered by the internet provider. If their address is within the coverage range then the user will be able to choose one of three plans and be prompted to enter their email. After selecting a plan users will be taken to a confirmation page showing which plan they have selected. They will also receive a confirmation email showing their selection. 
+In order to use this site users must input their name and address then verify that it is within the range covered by the internet provider. If their address is within the coverage range then the user will be able to choose one of three plans. After selecting a plan users will be taken to a confirmation page showing which plan they have selected. They will also receive a confirmation email showing their selection. 
 
-![alt text](assets/images/screenshot.png)
 
 ## Credits
 

@@ -3,6 +3,6 @@ function changePage() {
 
     function changePage2() {
         var Lt = "Lt";
-        console.log(Lt);
+        localStorage.setItem('Lt', Lt);
         window.location.replace("cart.html");
     };

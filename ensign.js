@@ -3,7 +3,7 @@ function changePage() {
 
     function changePage2() {
         var Ensign = "Ensign";
-        console.log(Ensign);
-        window.location.replace("summary.html")};
+        localStorage.setItem('Ensign', Ensign.value);
+        window.location.replace("cart.html")};
 
     
