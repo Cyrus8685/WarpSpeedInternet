@@ -9,7 +9,9 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: White;
+            background-image: url(/planpages/zzimages/New\ Galaxy\ Background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .container {
             max-width: 800px;
@@ -68,43 +70,39 @@
             background-color: black;
         }
     </style>
+
 </head>
 <body>
- <div class="container">
+    <div class="container">  <!-- remove your email address? just leave blank?-->
+        <h1>Congrats On Your Warp Speed Internet subscription!</h1>
+        <p>Thank You: <span class="fullname" id="fullname1"> </span> </p> <!--need to add var firstname? localStorage not sure-->
+        <p class = "plan" id="plan"></p>
+        <p>To be installed at: <span class="address" id="address1"></span></p>
+        <p>We're excited to have you on board. You will receive notifications and via email at the e-mail address listed below.</p>
+        <p>Your email address: <span class="email" id="emailout1" onload="displayName ()"></span></p> <!--span JS-->
+        <p> One of our sales agents will be in contact with you shortly for further instructions and billing.</p>
+    </div>
+<div class="container">
         <ul id="cartItems">
             <!-- Cart items will be added here -->
         </ul>
         <div class="feedbackForm">
             <p>Are you happy with your selection?</p>
-            <button id="proceedPageButton">Proceed</button>
+            <button id="proceedPageButton" onclick="changePage2()" onclick="sendMail ()"> Proceed</button>
         </div>
  </div>
-
- <script>
-    // Fetch the cart items from the API
-    fetch('https://example.com/shopping-cart-api')
-        .then(response => response.json())
-        .then(data => {
-            const cartItems = data.items;
-            const cartItemsList = document.getElementById('cartItems');
-
-            // clear cart
-            cartItemsList.innerHTML = '';
-
-            // Add each item to the list
-            cartItems.forEach(item => {
-                const listItem = document.createElement('li');
-                listItem.classList.add('cartItem');
-                listItem.innerHTML = `
-                    <img src="${item.image}" alt="${item.name}">
-                    <span class="itemName">${item.name}</span> - $${item.price}
-                `;
-                cartItemsList.appendChild(listItem);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching cart items:', error);
-        });
-
-    document.getElementById('proceedPageButton').addEventListener('click', function() {
-    });
+ <script type="text/javascript"
+ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+ publicKey: "q_aKRXMFySsqoypqY",
+});
+})();
+</script>
+<script src="HomeScreen.js"></script>
+<script src="Lt.js"></script>
+<script src="Commander.js"></script>
+<script src="ensign.js"></script>
+<script src="Cart.js"></script>

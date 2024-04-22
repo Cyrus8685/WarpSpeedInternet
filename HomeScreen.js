@@ -22,6 +22,7 @@
 
 let autocomplete;
 let place;
+
 async function initAutocomplete() {
     autocomplete = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete'),
@@ -50,19 +51,19 @@ addresscheck.addEventListener("click", async function onPlaceChanged() {
         }
     });
 
+    var input1 = document.getElementById('autocomplete').value;
+    localStorage.setItem('address', input1);
+
+    var input2 = document.getElementById('fullname').value;
+    localStorage.setItem('name', input2);
+
+    var input3 = document.getElementById('subscriptionEmail').value;
+    localStorage.setItem('email', input3);
+
     if (isInFlorida) {
-       window.location.replace("planspage.html") 
-    } else {
-        alert("Not Within Florida");
-    }
-
-    var input1 = document.getElementById('autocomplete');
-    console.log(input1.value);
-
-    var input2 = document.getElementById('name');
-    console.log(input2.value);
-
-    var input1 = document.getElementById('email');
-    console.log(input1.value);
+        window.location.replace("planspage.html") 
+     } else {
+         alert("Not Within Florida");
+     }
     
 });

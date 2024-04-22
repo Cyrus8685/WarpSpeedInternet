@@ -9,7 +9,9 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: whitesmoke;
+            background-image: url(/planpages/zzimages/New\ Galaxy\ Background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .container {
             max-width: 800px;
@@ -37,25 +39,28 @@
     <div class="container">  <!-- remove your email address? just leave blank?-->
         <h1>Thank You for your Warp Speed Internet subscription!</h1>
         <p>We're excited to have you on board. You will receive notifications and offers via email.</p>
-        <p>Your email address: <span class="email" id="email"></span></p> <!--span JS-->
-        <p>Thank You: <span class="fullname" id="fullname"> </span> </p> <!--need to add var firstname? localStorage not sure-->
+        <p>Your email address: <span class="email" id="emailoutput2"></span></p> <!--span JS-->
+        <p>Thank You: <span class="fullname" id="fullnameoutput2"> </span> </p> <!--need to add var firstname? localStorage not sure-->
         <p> One of our sales agents will be in contact with you shortly for further instructions and billing.</p>
     </div>
 
     <script> // JS not sure how accurate -->
         // Get the email used for initial email search for qualifying locations
-        var email = localStorage.getItem('subscriptionEmail');
+        var email = localStorage.getItem('email');
 
-        var fullname = localStorage.getItem('fullname');
+        var fullname = localStorage.getItem('name');
 
         // Display the email on the summary page
         if (email) {
-            document.getElementById('email').textContent = email;
+            emailoutput2.textContent = `${email}`;
         }
 
         if (fullname) {
-            document.getElementById('fullname').textContent = fullname;
+            fullnameoutput2.textContent = `${fullname}`;
         }
 
     </script>
+     <script src="Lt.js"></script>
+     <script src="ensign.js"></script>
+     <script src="Commander.js"></script>
 </body>
