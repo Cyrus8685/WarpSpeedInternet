@@ -37,4 +37,4 @@ var templateParams = {
 };
 
 proceedPageButton.addEventListener("click", async function () {
-  window.location.replace("summary.html")});
+  window.location.replace("Summary.html")});
