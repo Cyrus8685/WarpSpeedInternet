@@ -4,6 +4,6 @@ function changePage() {
     function changePage2() {
         var Ensign = "Ensign";
         localStorage.setItem('Ensign', Ensign.value);
-        window.location.replace("cart.html")};
+        window.location.replace("Cart.html")};
 
     

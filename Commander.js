@@ -4,5 +4,5 @@ function changePage() {
     function changePage2() {
         var Commander = "Commander";
         localStorage.setItem('Commander', Commander.value);
-        window.location.replace("cart.html");
+        window.location.replace("Cart.html");
     };
