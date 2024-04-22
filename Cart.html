@@ -70,7 +70,14 @@
     </style>
 </head>
 <body>
- <div class="container">
+    <div class="container">  <!-- remove your email address? just leave blank?-->
+        <h1>Thank You for your Warp Speed Internet subscription!</h1>
+        <p>We're excited to have you on board. You will receive notifications and offers via email.</p>
+        <p>Your email address: <span class="email" id="emailout1" onload="changeEmail()"></span></p> <!--span JS-->
+        <p>Thank You: <span class="fullname" id="fullname"> </span> </p> <!--need to add var firstname? localStorage not sure-->
+        <p> One of our sales agents will be in contact with you shortly for further instructions and billing.</p>
+    </div>
+<div class="container">
         <ul id="cartItems">
             <!-- Cart items will be added here -->
         </ul>
@@ -80,7 +87,7 @@
         </div>
  </div>
 
- <script>
+ <script>/*
     // Fetch the cart items from the API
     fetch('https://example.com/shopping-cart-api')
         .then(response => response.json())
@@ -108,3 +115,10 @@
 
     document.getElementById('proceedPageButton').addEventListener('click', function() {
     });
+
+    */</script>
+<script src="HomeScreen.js"></script>
+<script src="Lt.js"></script>
+<script src="Commander.js"></script>
+<script src="ensign.js"></script>
+<script src="Cart.js"></script>
