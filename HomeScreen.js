@@ -61,7 +61,7 @@ addresscheck.addEventListener("click", async function onPlaceChanged() {
     console.log(input1.value);
 
     var input2 = document.getElementById('name').value;
-    localStorage.setItem('name', input2);
+    sessionStorage.setItem('name', input2);
 
     var input3 = document.getElementById('email');
     setItem('email', input3.value);

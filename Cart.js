@@ -1,13 +1,6 @@
-const userNameText = document.querySelector("#fullname"); 
+function displayName () {
 
-function displayName() {
-    const nameFromLocalStorage = localStorage.getItem('name');
+var paragraph = document.getElementById("fullname").innerHTML;
+var text = document.getItem('name');
 
-    if (nameFromLocalStorage) {
-        userNameText.textContent = nameFromLocalStorage;
-    } else {
-        userNameText.textContent = "No name data in local storage";
-    }
-}
-
-displayName();
+paragraph.beforeend(text);}
