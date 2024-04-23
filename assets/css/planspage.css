@@ -1,0 +1,99 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(/assets/images/NewGalaxyBackground.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.plan {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform .2s;
+}
+.plan h2 {
+    color: black;
+   
+}
+.plan .price {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+.plan ul li {
+    margin-bottom: 10px;
+}
+.container2{
+    max-width: 100px;
+    margin: 200px;
+    position: bottom;
+
+    display: flex;
+    justify-content:space-around;
+    padding:30px;
+}
+
+
+.BacktoHome {
+
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top:5px;
+    transition: transform .2s;
+}
+.plan .cta {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform .2s;
+}
+.plan .cta:hover {
+    background-color: grey;
+    transform: scale(1.5); background-color: blue;
+}
+.plan:hover{
+    background-color: white;
+    transform: scale(1.1);
+
+}
+.BacktoHome:hover {
+    background-color: blue;
+    transform: scale(1.1);
+    color:blue;
+}
+.BacktoHome .cta{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display:contents;
+    margin-top: 10px;
+    transition: transform .2s; 
+
+}

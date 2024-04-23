@@ -1,5 +1,6 @@
+
 body{
-    background-image: url(/planpages/zzimages/New\ Galaxy\ Background.jpg);
+    background-image: url(/assets/images/NewGalaxyBackground.jpg);
     background-size: cover;
     background-position: center top;
 }
@@ -85,6 +86,7 @@ body{
     max-width: 20%;
     margin: auto;
     padding: 90px;
+    margin-left: 350px;
 }
 
 .buttons button{

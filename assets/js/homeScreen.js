@@ -1,25 +1,3 @@
-            /*document.getElementById('addressForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                var address = document.getElementById('address').value;
-                //  Logic needed to show availability with an API
-                //  Just shows basic event list atm,
-                document.getElementById('result').innerHTML = "<p>Checking availability for: " + address + "</p>";
-            });*/
-        /*let  address;
-        function initAddress() {
-            address = new us-autocomplete-pro.api.smarty.com.Address (document.getElementById('address'));
-            address.addListener('address_results', onAddressResult);
-        }
-
-           function onAddressResults () {
-            var results = address.getResults();
-            if (!results.geometry) {
-                document.getElementById('address').placeholer = 'Type Address Here';
-            } else {
-                document.getElementById('details').innerHTML = address.name;
-            }
-           }*/
-
 let autocomplete;
 let place;
 
@@ -61,7 +39,7 @@ addresscheck.addEventListener("click", async function onPlaceChanged() {
     localStorage.setItem('email', input3);
 
     if (isInFlorida) {
-        window.location.replace("planspage.html") 
+        window.location.assign("assets/html/Planspage.html") 
      } else {
          alert("Not Within Florida");
      }
