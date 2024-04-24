@@ -1,12 +1,12 @@
-let email = localStorage.getItem('email');
+let emailout = localStorage.getItem('email');
 let fullname = localStorage.getItem('name');
-let address2 = localStorage.getItem('address');
+let addressout = localStorage.getItem('address');
 let Commander = localStorage.getItem('Commander');
 let Ensign = localStorage.getItem('Ensign');
 let Lt = localStorage.getItem('Lt');
 let planchoice;
 
-emailout1.textContent = `${email}`;
+emailout1.textContent = `${emailout}`;
 fullname1.textContent = `${fullname}`;
 address1.textContent = `${address2}`;
 
@@ -23,14 +23,13 @@ plan.textContent = `You Have Chose ${Lt} For Your Plan.`;
 planchoice = `${Lt}`;
 };
 
-function sendMail () {
+async function sendMail () {
 
-var templateParams = {
+  var templateParams = {
     name: `${fullname}`,
-    email: `${email}`,
-    address: `${address2}`,
+    email: `${emailout}`,
+    address: `${addressout}`,
     plans: `${planchoice}`,
-
   };
   
   emailjs.send('service_x6enbnf', 'template_ksnbgzk', templateParams).then(
@@ -41,7 +40,8 @@ var templateParams = {
       console.log('FAILED...', error);
     },
   );
-};
 
-proceedPageButton.addEventListener("click", async function () {
-  window.location.assign("/Warp-Speed-Internet/assets/html/Summary.html")});
+  setTimeout(() => {
+           window.location.assign("/assets/html/Summary.html");
+          }, 1.0 * 1000);
+};

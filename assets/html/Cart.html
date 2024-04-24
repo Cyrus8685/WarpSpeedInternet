@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Warp-Speed-Internet/assets/css/cart.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/cart.css" type="text/css">
     <title>Shopping Cart</title>
 </head>
 <body>
@@ -22,18 +22,17 @@
         </ul>
         <div class="feedbackForm">
             <p>Are you happy with your selection?</p>
-            <button id="proceedPageButton" onclick="sendMail ()"> Proceed</button>
+            <button id="proceedPageButton" onclick="sendMail ()" onclick="changePage()">Proceed</button>
         </div>
  </div>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+ <script type="text/javascript"
+ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "k7uYFSfBF4LnAY5f5",
-        privateKey: "1FQpVfCbow_6t-I8loixE"
-      });
-   })();
+(function(){
+emailjs.init({
+ publicKey: "fdxgLw013BWQrpAfj",
+});
+})();
 </script>
-<script src="/Warp-Speed-Internet/assets/js/cart.js"></script>
+<script src="/assets/js/cart.js"></script>
