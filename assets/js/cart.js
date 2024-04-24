@@ -42,6 +42,6 @@ async function sendMail () {
   );
 
   setTimeout(() => {
-           window.location.assign("/assets/html/summary.html");
+           window.location.assign("./assets/html/summary.html");
           }, 1.0 * 1000);
 };
