@@ -1,0 +1,64 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/Warp-Speed-Internet/assets/images/NewGalaxyBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #555;
+}
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+}
+.cartItem {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.cartItem:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.cartItem img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+.cartItem .itemName {
+    font-weight: bold;
+}
+.feedbackForm {
+    text-align: center;
+    margin-top: 20px;
+}
+.feedbackForm textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.feedbackForm button {
+    background-color: lightskyblue;
+    color: white
+    border none; /* not sure why this isnt working */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer
+}
+.feedbackForm button:hover {
+    background-color: black;
+}

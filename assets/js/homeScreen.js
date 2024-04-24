@@ -39,7 +39,7 @@ addresscheck.addEventListener("click", async function onPlaceChanged() {
     localStorage.setItem('email', input3);
 
     if (isInFlorida) {
-        window.location.assign("assets/html/Planspage.html") 
+        window.location.assign("/Warp-Speed-Internet/assets/html/Planspage.html"); 
      } else {
          alert("Not Within Florida");
      }
