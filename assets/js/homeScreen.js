@@ -39,7 +39,7 @@ addresscheck.addEventListener("click", async function onPlaceChanged() {
     localStorage.setItem('email', input3);
 
     if (isInFlorida) {
-        window.location.assign("/assets/html/planspage.html"); 
+        window.location.assign("./assets/html/planspage.html"); 
      } else {
          alert("Not Within Florida");
      }
