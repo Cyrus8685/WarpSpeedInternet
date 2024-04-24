@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("../assets/images/newgalaxybackground.jpg");
+    background-image: url("./assets/images/newgalaxybackground.jpg");
     background-size: cover;
     background-position: center top;
 }
