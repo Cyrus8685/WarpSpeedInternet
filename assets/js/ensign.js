@@ -1,5 +1,5 @@
 function changePage() {
-    window.location.assign("http://assets/html/planspage.html");
+    window.location.assign("./assets/html/planspage.html");
 };
 
     function changePage2() {
