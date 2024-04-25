@@ -1,5 +1,6 @@
 let autocomplete;
 let place;
+let addresscheck = document.getElementById("addresscheck");
 
 async function initAutocomplete() {
     autocomplete = new google.maps.places.Autocomplete(
@@ -21,7 +22,7 @@ async function onPlaceChanged(){
     console.log(place.address_components);
 }
 
-document.getElementById("addresscheck").addEventListener("click", async function onPlaceChanged() {
+addresscheck.addEventListener("click", async function onPlaceChanged() {
     let isInFlorida = false;
     place.address_components.forEach(component => {
         if (component.long_name === "Florida") {
