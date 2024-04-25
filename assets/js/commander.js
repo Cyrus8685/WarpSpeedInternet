@@ -3,5 +3,7 @@ async function changePage() {
 
     async function changePage2() {
         var Commander = "Commander Plan $99.99 2000/2000 Mbps";
-        localStorage.setItem('Commander', Commander.value);
+        var planchoice = "Commander Plan $99.99 2000/2000 Mbps";
+        localStorage.setItem('Commander', Commander);
+        localStorage.setItem('Planchoice', Planchoice);
         window.location.assign("/warpspeedinternet/assets/html/cart.html");};
