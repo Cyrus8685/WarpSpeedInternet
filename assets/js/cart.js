@@ -4,23 +4,20 @@ let addressout = localStorage.getItem('address');
 let Commander = localStorage.getItem('Commander');
 let Ensign = localStorage.getItem('Ensign');
 let Lt = localStorage.getItem('Lt');
-let planchoice;
+let planchoice = localStorage.getItem('Plan');
 
 emailout1.textContent = `${emailout}`;
 fullname1.textContent = `${fullname}`;
-address1.textContent = `${address2}`;
+address1.textContent = `${addressout}`;
 
 if (Commander) {
 plan.textContent = `You Have Chose ${Commander} For Your Plan.`;
-planchoice = `${Commander}`;
 };
 if (Ensign) {
 plan.textContent = `You Have Chose ${Ensign} For Your Plan.`;
-planchoice = `${Ensign}`;
 };
 if (Lt){
 plan.textContent = `You Have Chose ${Lt} For Your Plan.`;
-planchoice = `${Lt}`;
 };
 
 async function sendMail () {
