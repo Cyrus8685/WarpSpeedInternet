@@ -1,5 +1,5 @@
 function changePage() {
-    window.location.assign("/warpspeedinternet/html/plansPage.html");
+    window.location.assign("/warpspeedinternet/assets/html/plansPage.html");
 };
 
     function changePage2() {
