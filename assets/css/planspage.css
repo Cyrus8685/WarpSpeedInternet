@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(/warpspeedinternet/assets/images/galaxy.jpg);
-    background-size:auto;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 .container {
