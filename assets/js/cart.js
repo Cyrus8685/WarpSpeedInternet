@@ -4,7 +4,7 @@ let addressout = localStorage.getItem('address');
 let Commander = localStorage.getItem('Commander');
 let Ensign = localStorage.getItem('Ensign');
 let Lt = localStorage.getItem('Lt');
-let planchoice = localStorage.getItem('Plan');
+let planchoice = localStorage.getItem('Planchoice');
 
 emailout1.textContent = `${emailout}`;
 fullname1.textContent = `${fullname}`;
