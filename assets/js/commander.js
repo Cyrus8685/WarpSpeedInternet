@@ -1,5 +1,5 @@
 async function changePage() {
-    window.location.assign("/warpspeedinternet/html/planspage.html");};
+    window.location.assign("/warpspeedinternet/html/plansPage.html");};
 
     async function changePage2() {
         var Commander = "Commander Plan $99.99 2000/2000 Mbps";
