@@ -21,7 +21,7 @@ async function onPlaceChanged(){
     console.log(place.address_components);
 }
 
-document.getElementById("addresscheck").addresscheck.addEventListener("click", async function onPlaceChanged() {
+document.getElementById("addresscheck").addEventListener("click", async function onPlaceChanged() {
     let isInFlorida = false;
     place.address_components.forEach(component => {
         if (component.long_name === "Florida") {
