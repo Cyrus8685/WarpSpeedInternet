@@ -1,5 +1,5 @@
 function changePage() {
-    window.location.assign("/warpspeedinternet/assets/html/plansPage.html");
+    window.location.assign("/WarpSpeedInternet/assets/html/plansPage.html");
 };
 
     function changePage2() {
@@ -7,7 +7,7 @@ function changePage() {
         var planchoice = "Ensign Plan $39.99 500/500 Mbps";
         localStorage.setItem('Ensign', Ensign);
         localStorage.setItem('Planchoice', planchoice);
-        window.location.assign("/warpspeedinternet/assets/html/cart.html");
+        window.location.assign("/WarpSpeedInternet/assets/html/cart.html");
     };
 
     

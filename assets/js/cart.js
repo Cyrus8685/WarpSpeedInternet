@@ -39,6 +39,6 @@ async function sendMail () {
   );
 
   setTimeout(() => {
-           window.location.assign("/warpspeedinternet/assets/html/summary.html");
+           window.location.assign("/WarpSpeedInternet/assets/html/summary.html");
           }, 1.0 * 1000);
 };
